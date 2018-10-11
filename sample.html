@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<title>Converter</title>
+<meta charset="utf-8" />
+<script src='sample.js' ></script>
+</head>
+<style>
+.dontShowMe{
+	display:none;
+	opacity:0;
+}
+.clickable{
+	cursor:pointer;
+	
+}
+
+
+</style>
+</head>
+<body>
+<div id="name">
+ </div>
+
+<form>
+<table width="100%">
+<tr>
+<td>
+Enter your code here:
+<textarea id=left style="width:100%;height:500px">
+ <div style="color:red">
+    <div style="color:red;background-color:blue">
+      <div style="color:blue;font-family:helvetica">a
+      </div>
+    </div>
+  </div>
+
+
+  <div style="color:red" >
+    <div style="color:red;background-color:blue">
+      <div style="color:blue;font-family:helvetica">a
+      </div>
+    </div>
+  </div>
+
+</textarea>
+</td>
+<td valign=middle>
+ <h1 class="clickable" onclick="fixCode()">=&gt;</h1>
+</td>
+<td>
+Your inline style less should appear here:
+<textarea id=right style="width:100%;height:500px"></textarea>
+</td>
+</tr>
+</table>
+<input type=button value=fixCode onclick="fixCode()" />
+
+<div id="hidden" class="dontShowMe"></div>
+</body>
+</html>
